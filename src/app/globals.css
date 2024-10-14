@@ -1,6 +1,7 @@
 :root {
-    --bg: rgb(20, 92, 187);
-    --text: white;
+    --bg: #0b9bce;
+    --secondary: #1d3b65;
+    --text: #0b9bce;
 }
 
 /* Reset CSS */
@@ -21,7 +22,8 @@ a {
 }
 
 .container{
-    background-color: rebeccapurple;
+    /* background-color: #1d3b65; */
+    background-color: white;
     width:  100vw;
     margin: auto;
     padding: 0 50px;
