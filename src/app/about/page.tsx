@@ -1,8 +1,8 @@
 export default function About(){
     return (
-        <main className="text-center pt-32 px-36 flex flex-col gap-5">
+        <main className="text-center pt-32 px-10 flex flex-col gap-5">
             <h1 className="text-5xl font-bold">Chi siamo</h1>
-            <p className="mx-auto leading-8 text-xl">Il Funny Bike è un movimento spontaneo che organizza uscite serali in bicicletta con frequenza settimanale, prettamente nel periodo estivo e nella città di Foggia.
+            <p className="mx-auto leading-9 text-xl">Il Funny Bike è un movimento spontaneo che organizza uscite serali in bicicletta con frequenza settimanale, prettamente nel periodo estivo e nella città di Foggia.
 
 Il Funny Bike è nato dall’incontro di quattro amici all'inizio dell’estate 2014. Essi avevano voglia di fare qualcosa di bello e di diverso per la città di Foggia. Hanno avuto l’idea di radunare più persone tra parenti ed amici, per un’uscita collettiva in bicicletta, tramite la creazione di una pagina su Facebook col nome “Funny Bike Foggia”. 
 L’obiettivo principale che si posero era di quello di creare relazioni tra i partecipanti, quindi permettere la socializzazione in sella alla bicicletta. 
