@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="text-center pt-32 px-10 flex flex-col gap-5">
+    <main className="text-center py-20 px-10 flex flex-col gap-5">
       <h1 className="text-5xl md:text-8xl font-bold mb-5">
         Scopri <span className="text-primary">Foggia</span> in Bicicletta
       </h1>

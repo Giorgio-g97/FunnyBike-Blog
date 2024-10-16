@@ -1,7 +1,13 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
+    {
+        name: "Home",
+        path: "/"
+    },
     {
         name: "Chi siamo",
         path: "/about"
@@ -9,25 +15,33 @@ const navLinks = [
     {
         name: "Blog",
         path: "/blog"
+    },
+    {
+        name: "Posts",
+        path: "/posts"
     }
 ]
 
 export default function Navbar(){
+
+    const pathName = usePathname();
+
     return(
         
             <nav className="flex justify-between px-10 border-b shadow text-center items-center">
                 <Link href="/">
                 <Image 
+                className="p-[2px] shadow-2xl rounded-full m-[5px]"
                 src="/logo.png"
-                width={100}
-                height={100}
+                width={90}
+                height={90}
                 alt="logo-funny-bike"
                 />
                 </Link>
-                <ul className="flex gap-5 text-primary">
+                <ul className="flex gap-5">
                     {navLinks.map(link => (
                         <li key={link.name}>
-                            <Link href={link.path}>{link.name}</Link>
+                            <Link className={`${pathName === link.path ? "text-white rounded-xl bg-primary" : "text-primary"} "text-3xl p-3 "`} href={link.path}>{link.name}</Link>
                         </li>
                     ))}
                 </ul>
