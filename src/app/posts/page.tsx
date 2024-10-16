@@ -13,7 +13,7 @@ type ObjArrPosts = {
 }
 
 export default async function Posts(){
-
+    await new Promise(res => setTimeout(res, 1000))
     const res = await fetch("https://dummyjson.com/posts?limit=10")
     const posts: ObjArrPosts = await res.json()
 
