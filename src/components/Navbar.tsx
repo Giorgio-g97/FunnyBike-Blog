@@ -19,6 +19,10 @@ const navLinks = [
     {
         name: "Posts",
         path: "/posts"
+    },
+    {
+        name: "Crea un Post",
+        path: "/create-post"
     }
 ]
 

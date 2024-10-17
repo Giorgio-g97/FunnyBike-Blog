@@ -6,4 +6,4 @@
 - Carousel
 - Newsletter
 - Blog Post
-- Get in touch
+- Get in touch (mail)
