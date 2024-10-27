@@ -1,5 +1,7 @@
 "use server";
 
+import prisma from "@/lib/db";
+
 /**
  * SERVER ACTIONS
  * Questa funzione fa in automatico il fetch all'url da 
@@ -13,4 +15,11 @@ export default async function createPost(formData: FormData) {
     console.log("Titolo: ", title);
     console.log("Corpo del post: ", body);
 
+    // Metodo POST su Prisma
+    await prisma.post.create({
+        data: {
+            title,
+            body
+        }
+    })
 }

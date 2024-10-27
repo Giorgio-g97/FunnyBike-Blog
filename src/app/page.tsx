@@ -23,6 +23,5 @@ export default function Home() {
         alt="Immagini di gruppo di ciclisti"
       />
     </main>
-    //Video at 14:52
   );
 }

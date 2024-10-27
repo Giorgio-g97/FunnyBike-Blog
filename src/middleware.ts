@@ -5,5 +5,5 @@ export default function middleware(req: NextRequest) {
   return withAuth(req);//Controlla se ha token di accesso
 }
 export const config = {
-  matcher: ["/test"] // Determina quali routes deve proteggere
+  matcher: ["/create-post"] // Determina quali routes deve proteggere
 };

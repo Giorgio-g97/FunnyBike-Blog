@@ -7,3 +7,8 @@
 - Newsletter
 - Blog Post
 - Get in touch (mail)
+
+# CMDs utils
+
+- npx prisma db push (Crea e aggiorna DB)
+- npm prisma studio (Apri gesionale DB)
