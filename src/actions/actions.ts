@@ -1,6 +1,7 @@
 "use server";
 
 import prisma from "@/lib/db";
+import { revalidatePath } from "next/cache";
 
 /**
  * SERVER ACTIONS
@@ -22,4 +23,12 @@ export default async function createPost(formData: FormData) {
             body
         }
     })
+
+    /**
+     * Ri-renderizza la route "/posts" perché
+     * NextJS di default recupera i dati salvati in cache
+     * Nel momento in cui devo necessariamente aggiornare i valori
+     * posso usare questa funzione
+     */
+    revalidatePath("/posts");
 }
