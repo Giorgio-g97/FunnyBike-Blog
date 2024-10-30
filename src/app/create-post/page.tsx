@@ -1,4 +1,5 @@
 import Form from "@/components/Form";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default async function CreatePost() {
   return (
@@ -6,7 +7,7 @@ export default async function CreatePost() {
       <h1 className="text-5xl font-bold">Crea un Post</h1>
 
       <Form />
-      {/* Video 1h48m56s */}
+      <LogoutLink>Logout</LogoutLink>
     </main>
   );
 }
