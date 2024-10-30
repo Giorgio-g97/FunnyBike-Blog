@@ -10,10 +10,10 @@ export default function Home() {
         Unisciti a noi per esplorare le meraviglie di Foggia, pedalando insieme!
       </h3>
       <p className="max-w-[750px] mx-auto leading-8 text-xl">
-        Vivi un'esperienza unica! La nostra associazione organizza uscite in
+        Vivi un&apos;esperienza unica! La nostra associazione organizza uscite in
         bicicletta adatte a tutti, per scoprire angoli nascosti di questa
         splendida città.Che tu sia un ciclista esperto o un principiante, Foggia
-        ti aspetta per un'avventura indimenticabile!
+        ti aspetta per un&apos;avventura indimenticabile!
       </p>
       <Image
         className="rounded-3xl shadow-2xl"

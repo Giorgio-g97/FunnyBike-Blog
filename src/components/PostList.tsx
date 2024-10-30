@@ -2,11 +2,11 @@ import prisma from "@/lib/db";
 import Link from "next/link";
 
 // Definisco il singolo Post
-type Post = {
-  id: number;
-  title: string;
-  body: string;
-};
+// type Post = {
+//   id: number;
+//   title: string;
+//   body: string;
+// };
 
 export default async function PostList() {
   await new Promise((res) => setTimeout(res, 1000));
